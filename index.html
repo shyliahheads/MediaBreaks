@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive webpage demonstrating CSS media queries and breakpoints.">
+    <meta name="author" content="Shyliah Heads">
+    <title>Media Queries and Breakpoints</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Media Queries and Breakpoints</h1>
+        <p>One website, every screen size.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#phone">Mobile</a>
+        <a href="#tablet">Tablet</a>
+        <a href="#laptop">Desktop</a>
+    </nav>
+
+    <main class="container" id="about">
+        <section class="intro">
+            <h2>What Is Responsive Design?</h2>
+            <p>
+                Responsive design allows a webpage to adjust to different
+                screen sizes. CSS media queries help change the layout
+                when more or less space becomes available.
+            </p>
+        </section>
+
+        <div class="cards">
+            <section class="card" id="phone">
+                <h2>Mobile Layout</h2>
+                <p>
+                    On smaller screens, content is arranged in one column
+                    to make reading easier and prevent horizontal scrolling.
+                </p>
+            </section>
+
+            <section class="card" id="tablet">
+                <h2>Tablet Layout</h2>
+                <p>
+                    When the screen becomes wider, the sections can sit
+                    beside each other instead of being stacked vertically.
+                </p>
+            </section>
+
+            <section class="card" id="laptop">
+                <h2>Desktop Layout</h2>
+                <p>
+                    On larger screens, the page uses a maximum width
+                    to keep the content comfortable to read.
+                </p>
+            </section>
+        </div>
+
+        <section class="breakpoint-info">
+            <h2>Understanding Breakpoints</h2>
+            <p>
+                A breakpoint is a viewport width where a media query
+                applies new CSS rules. This page uses 600px, 768px,
+                and 1024px as example breakpoints.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shyliah Heads | DEV 109</p>
+    </footer>
+</body>
+</html>
+
